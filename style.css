@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Quicksand',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom left, white, rgb(248, 202, 142));;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 170px;
+}
+.nav-link{
+    flex: 1;
+    text-align: right;
+}
+.nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 6px 12px;
+    position: relative;
+}
+.nav-link ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+}
+.nav-link ul li i{
+    font-size: 18px;
+    color: #000;
+}
+.nav-link ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f68b34;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-link ul li:hover::after{
+    width: 100%;
+}
+.header-text{
+    width: 70%;
+    color: rgb(31, 31, 31);
+    text-align: left;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    padding-top: 10%;
+    padding-left: 70px;
+}
+.header-text .button a{
+    color: #fff;
+}
+.header-text h1{
+    font-size: 60px;
+}
+.header-text h3{
+    color: #f68b34;
+}
+.header-text p{
+    margin: 10px 0 30px;
+    font-size: 13px;
+}
+.header-icon ul li{
+    font-size: 25px;
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+}
+.header-icon ul li a i{
+    color: #fff;
+}
+.heroimages{
+    width: 90%;
+    margin: auto;
+}
+.heroimages img{
+    width: 400px;
+}
+.col50left{
+    width: 50%;
+    margin: 15px;
+}
+.col50right{
+    width: 50%;
+    margin: 15px;
+}
+nav .fas, nav .far{
+    display: none;
+}
+@media (max-width:700px) {
+    .header{
+        overflow: hidden;
+    }
+    .header-text{
+        width: 100%;
+        text-align: center;
+    }
+    .header-text h1{
+        font-size: 33px;
+    }
+    .header-text p{
+        font-size: 12px;
+    }
+    .heroimages{
+        margin: auto;
+    }
+    .heroimages img{
+        width: 300px;
+        margin: auto;
+    }
+    .nav-link ul li{
+        display: block;
+    }
+    .nav-link{
+        position: absolute;
+        background: #ff9035;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        color: #fff;
+        transition: 1s;
+    }
+    nav .fas, nav .far{
+        display: block;
+        color: rgb(0, 0, 0);
+        margin: 10px;
+        font-size: 22px;
+    }
+    .nav-link ul{
+        padding: 30px;
+    }
+    .row{
+        flex-direction: column;
+    }
+}
+
+.row{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border: 1px solid #f68b34;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: #f68b34;
+    position: relative;
+    transition: 0.5s;
+}
+.button:hover{
+    border: 1px solid #fff;
+    background: #7087b0;
+    
+}
