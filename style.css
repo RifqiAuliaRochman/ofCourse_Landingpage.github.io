@@ -10,14 +10,19 @@ ul li{
     list-style: none;
 }
 
+/* ----------HEADER STYLE--------- */
 
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(to bottom left, white, rgb(248, 202, 142));;
+    background-image: linear-gradient(to bottom left, rgb(248, 202, 142),white);;
     background-position: center;
     background-size: cover;
     position: relative;
+}
+.header .row .button a{
+    font-size: 17px;
+    font-weight: 600;
 }
 nav{
     display: flex;
@@ -160,6 +165,70 @@ nav .fas, nav .far{
     }
 }
 
+/* ----------OPPORTUNITY SECTION---------- */
+.opportunity{
+    background-color: #fafafa;
+}
+.opportunity-container{
+    width: 80%;
+    position: relative;
+    margin: auto;
+    padding: 60px 40px;
+}
+.opportunity-title{
+    text-align: center;
+    font-size: 20px;
+    margin: 15px 0 45px;
+}
+.opportunity-col{
+    flex-basis: 33%;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin: 0 25px;
+    background-color: #fff;
+    padding: 30px 22px;
+    border-radius: 10px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 6px 20px 0 rgba(0, 0, 0, 0.11);
+}
+.opportunity-col:hover{
+    background-color: #f59242;
+    color: #fff;
+}
+.opportunity-col:hover img{
+    width: 143px;
+}
+.opportunity-img{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.opportunity-img img{
+    width: 150px;
+    transition: 0.5s;
+    margin: auto;
+    border-radius: 100%;
+}
+.opportunity-text{
+    text-align: center;
+    padding: 10px 33px;
+}
+.opportunity-text h3{
+    font-size: 18px;
+    margin: 9px 0 12px;
+}
+.opportunity-text p{
+    font-size: 11px;
+}
+@media (max-width:700px){
+    .opportunity-col{
+        margin: 10px 0;
+    }
+    .opportunity-title{
+        margin-top: 10px;
+    }
+}
+
+
 .row{
     margin-top: 3%;
     display: flex;
@@ -170,15 +239,16 @@ nav .fas, nav .far{
     text-decoration: none;
     color: #fff;
     border: 1px solid #fff;
-    border: 1px solid #f68b34;
+    border: 1px solid #5B84c4;
     padding: 12px 34px;
     font-size: 13px;
-    background: #f68b34;
+    background: #5B84c4;
+    /* background: #f59242; */
     position: relative;
     transition: 0.5s;
 }
 .button:hover{
     border: 1px solid #fff;
-    background: #7087b0;
+    background: #f59242;
     
 }
