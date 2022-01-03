@@ -15,7 +15,7 @@ ul li{
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(to bottom left, rgb(248, 202, 142),white);;
+    background-image: linear-gradient(to bottom left, rgb(248, 202, 142),rgba(255, 255, 255, 0.5)), url(img/bgheader.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -31,7 +31,7 @@ nav{
     align-items: center;
 }
 nav img{
-    width: 170px;
+    width: 180px;
 }
 .nav-link{
     flex: 1;
@@ -104,23 +104,27 @@ nav img{
 .heroimages img{
     width: 400px;
 }
-.col50left{
-    width: 50%;
-    margin: 15px;
-}
-.col50right{
+.col50{
     width: 50%;
     margin: 15px;
 }
 nav .fas, nav .far{
     display: none;
 }
-@media (max-width:700px) {
+@media (max-width:1000px) {
     .header{
         overflow: hidden;
     }
+    .header .row{
+        margin-top: 50px;
+    }
+    .col50{
+        margin: auto;
+    }
     .header-text{
         width: 100%;
+        margin: auto;
+        padding: 0;
         text-align: center;
     }
     .header-text h1{
@@ -131,9 +135,10 @@ nav .fas, nav .far{
     }
     .heroimages{
         margin: auto;
+        margin: 20px 0;
     }
     .heroimages img{
-        width: 300px;
+        width: 100%;
         margin: auto;
     }
     .nav-link ul li{
@@ -219,7 +224,7 @@ nav .fas, nav .far{
 .opportunity-text p{
     font-size: 11px;
 }
-@media (max-width:700px){
+@media (max-width:1000px){
     .opportunity-col{
         margin: 10px 0;
     }
@@ -230,7 +235,7 @@ nav .fas, nav .far{
 
 
 .row{
-    margin-top: 3%;
+    margin-top: 2%;
     display: flex;
     justify-content: space-between;
 }
@@ -248,7 +253,7 @@ nav .fas, nav .far{
     transition: 0.5s;
 }
 .button:hover{
-    border: 1px solid #fff;
+    border: 1px solid #ff9035;
     background: #f59242;
     
 }
