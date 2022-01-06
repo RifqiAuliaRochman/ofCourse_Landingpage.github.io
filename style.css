@@ -292,6 +292,7 @@ nav .fas, nav .far{
     .testi{
         flex-direction: column;
         margin: auto;
+        padding: 22px 0;
     }
     .testi-1{
         text-align: center;
@@ -331,6 +332,9 @@ nav .fas, nav .far{
     }
     .companies-logo img{
         margin: auto;
+        display: inline-block;
+        width: 100px;
+        margin-top: 15px;
     }
 }
 
@@ -558,14 +562,6 @@ nav .fas, nav .far{
 }
 
 @media only screen and (max-width:1000px) {
-  .testi {
-    width: 80%;
-    padding: 0;
-  }
-  .companies {
-    width: 80%;
-    padding: 0;
-  }
   .footer {
     width: 100%;
   }
