@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OfCourse</title>
+    <link rel="shortcut icon" href="img/tab-logos.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
     
@@ -89,9 +90,91 @@
 </section>
 
 
+<!-- --------TESTIMONIAL--------- -->
+<section class="testi">
+    <div class="testi-1">
+        <h2>Testimonial From ofCourse Member</h2>
+        <p>We have received many stundents from all over the country. We prove the quality and results of our course that is ofCourse with true statements. And this is the voice of the people.</p>
+    </div>
+    <div class="testi-2">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="img/Comment 1.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="img/Comment 2.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="img/Comment 3.png" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+    </div>
+</section>
+
+
+<!-- -------COMPANIES-------- -->
+<section class="companies">
+    <p>Trusted by 3+ Companies Worldwide</p>
+    <div class="companies-logo">
+        <img src="img/amazon.png">
+        <img src="img/google.png">
+        <img src="img/facebook.png">
+    </div>
+</section>
+
+
+<!-- ----------------FOOTER--------------- -->
+<section class="footer">
+    <div class="top-footer">
+        <div class="txt-about">
+            <h5>About ofCourse</h5>
+            <p>ofCourse is an online course platform that </br>can improve your skills and abilities.</p>
+        </div>
+        <div class="txt-support">
+            <h5>Support</h5>
+            <p>Privacy Policy</p>
+            <p>Terms</p>
+        </div>
+        <div class="txt-social-media">
+            <h5>Social Media</h5>
+            <div class="container" style="overflow: auto; display: flex; justify-content: space-between;">
+                <div class="twitter-icon">
+                    <a href="www.twitter.com"><img class="twitter" src="img/twit.png"></a>
+                </div>
+                <div class="fb-icon">
+                    <a href="www.facebook.com"><img class="fb" src="img/fb.png"></a>
+                </div>
+                <div class="ig-icon">
+                    <a href="www.instagram.com"><img class="ig" src="img/ig.png"></a>
+                </div>
+                <div class="linkedin-icon">
+                    <a href="www.linkedin.com"><img class="linkedin" src="img/link.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mid-footer">
+        <hr>
+    </div>
+    <div class="bot-footer">
+        <img src="img/logo ofcourse.png">
+        <p>© 2021 ofCourse. All Right Reserved</p>
+    </div>
+</section>
+
+
 <!-- --------JAVASCRIPT------- -->
 <script>
 
+    // ---------NAVIGATION----------
     var navLink = document.getElementById("navLink");
 
     function showMenu(){
@@ -100,6 +183,34 @@
     function hideMenu(){
         navLink.style.right = "-200px";
     }
+
+    // ----------TESTIMONI--------
+    var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
 
 </script>
 
