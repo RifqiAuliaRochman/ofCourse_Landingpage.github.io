@@ -259,49 +259,49 @@ nav .fas, nav .far{
 
 /* -------Alvin-Testi-FOOTER--------- */
 
-@media (max-width:1000px){
-    .testi{
-        flex-direction: column;
-    }
-    .testi-1{
-        text-align: center;
-        margin: auto;
-        padding-left: 0%;
-        padding-top: 0;
-    }
-}
 .testi{
 	display: flex;
 	justify-content: space-between;
+    padding: 20px 250px;
 }
 .testi-1{
 	width: 50%;
-	padding-left: 15%;
 	padding-top: 5%;
+    margin-right: 50px;
 }
 .testi-1 h2{
 	font-size: 23px;
-	padding-right: 15%;
     margin: 10px 0 15px;
 }
 .testi-1 p{
     font-size: 12px;
-	padding-right: 10%;
 }
 .testi-2{
 	width: 50%;
-	padding-right: 15%;
-	padding-top: 1%;
 	padding-bottom: 3%;
 }
 .testi-2 img{
-	width: 38vw;
+	width: 100px;
 	margin: auto;
 }
 .testi-2 a .prev{
     color: #F58634;
 }
 
+@media (max-width:1000px){
+    .testi{
+        flex-direction: column;
+        margin: auto;
+    }
+    .testi-1{
+        text-align: center;
+        margin: auto;
+        padding: 0;
+    }
+    .testi-2{
+        margin: auto;
+    }
+}
 /* ----------COMPANIES---------- */
 .companies{
 	background-color: #fafafa; 
@@ -455,7 +455,7 @@ nav .fas, nav .far{
 	display: flex; 
 }
 .footer .bot-footer img{
-	width: 10vw;
+	width: 100px;
 }
 .footer .bot-footer p{
 	color: #949494;
