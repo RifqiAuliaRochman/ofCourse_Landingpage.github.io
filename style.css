@@ -234,8 +234,8 @@ nav .fas, nav .far{
         margin-bottom: 0;
     }
     .opportunity-text{
-        margin: 0 70px;
-        padding: 10px 70px;
+        margin: 0 20px;
+        padding: 10px 20px;
     }
 }
 
@@ -389,6 +389,8 @@ nav .fas, nav .far{
         margin: auto;
     }
 }
+
+/* ------------COMPANIES------------- */
 .companies{
 	background-color: #fafafa; 
 	padding-top: 27px;
@@ -421,6 +423,9 @@ nav .fas, nav .far{
         margin-top: 15px;
     }
 }
+
+
+/* ------------FOOTER------------ */
 .footer{
 	background-color: #000;
     padding-top: 35px;
@@ -599,7 +604,7 @@ nav .fas, nav .far{
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: #949494;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
