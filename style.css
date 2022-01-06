@@ -363,10 +363,15 @@ nav .fas, nav .far{
 }
 @media (max-width:1000px){
     .course-col{
-        margin: 10px 0;
+        margin: 10px 70px;
     }
     .course-title{
         margin-top: 10px;
+    }
+}
+@media (max-width:700px){
+    .course-col{
+        margin: 10px 20px;
     }
 }
 
